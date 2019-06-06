@@ -21,6 +21,16 @@ library(asreml)
 
 setwd('E:/mppGxE_data') # set your working directory here
 
+# create folder to store the results
+
+res_fold <- file.path(getwd(),'results')
+res_EUNAM <- file.path(res_fold, 'EUNAM')
+res_USNAM <- file.path(res_fold, 'USNAM')
+
+dir.create(path = res_fold)
+dir.create(path = res_EUNAM)
+dir.create(path = res_USNAM)
+
 ######################
 # 1. EU-NAM analysis #
 ######################
